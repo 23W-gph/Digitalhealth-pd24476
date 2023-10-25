@@ -1,15 +1,21 @@
 <html>
   <head>
      <title>JOHN SNOW'S VISUALISATION</title>
-     
   </head>
   <body>
-     <h1>John Snow's Visualisation</h1>
-         <p>
-On 31 August 1854, after several other outbreaks had occurred elsewhere in the city, a major outbreak of cholera occurred in Soho.Over the next three days, 127 people on or near Broad Street died. During the next week, three quarters of the residents had fled the area. By 10 September, 500 people had died and the mortality rate was 12.8 per cent in some parts of the city. By the end of the outbreak, 616 people had died
-         </p>
-         <img src="SnowMap_Points.png" />
-   <br><br><br><br>
+   <link rel="stylesheet" href="style.css">
+     <h1 class="jumbo" id="key-visual">John Snow's Visualisation</h1>
+      <p>
+          On 31 August 1854, after several other outbreaks had occurred elsewhere in the city, a major outbreak of cholera occurred in Soho.Over the next three days, 127 people on or near Broad Street died. During the next week, three quarters of the residents had fled the area. By 10 September, 500 people had died and the mortality rate was 12.8 per cent in some parts of the city. By the end of the outbreak, 616 people had died
+      </p>
+      <!--
+      <map name="Snowmap">
+         <area shape="rect" coords="34,40,55,66" alt="Pump1" href="#"
+         <area shape="circle" coords="80,100,10" alt="Location1" href="#"
+      </map>
+       -->
+         <img src="SnowMap_Points.png" width="500"usemap="#Snowmap">
+   <br><br>
       <h2>Proving the theory</h2>
           <p>
                <ol>Snow knocked on doors and interviewed families with cholera. What united all the cases? They got their water at this Broad Street pump in the Soho neighborhood.</ol>
@@ -18,21 +24,39 @@ On 31 August 1854, after several other outbreaks had occurred elsewhere in the c
                      <li>At Falcon Lane, Wandsworth, on 3rd August, the daughter of a chemist deceased, aged 14 years, premonitory diarhoea 4 hours, cholera 24 hours – Water from a ditch into which cesspools empty themselves</li>
                   </div>
                <ol>Snow’s research was reinforced by the Reverend Henry Whitehead, who initially doubted Snow’s thesis. But Whitehead found the same Broad Street pump connection by interviewing those locals who hadn’t gotten cholera; these people hadn’t used that pump.</ol>
-             
           </p>
-          <a>Data recorded by the Registrar General identified the number of deaths per week, aligned with the source of water for the house where the person lived, or the death occurred.          
-         <table>
-               <tr><th style="color:brown;of houses supplied with water by:"><th></tr1>
-               <tr>
-                  <th>Southwark Company</th>
-                  <th>Kent Company</th>
+      <div>
+          <img src="LondonWaterSupply.jpg" width="200" />
+          <aside style="width:30%;float:right;background:lightblue;padding:top 10px">Map depicting the water supply in london by different companies</aside>          
+         <br><br>
+         <b> Data recorded by the Registrar General identified the number of deaths per week, aligned with the source of water for the house where the person lived, or the death occurred.</b>
+          <table>
+               <tr><th style=color:brown>Water company</th>
+                  <th style=color:brown>Houses served</th>
+                  <th style=color:brown>Cholera deaths</th>
+                  <th style=color:brown>Death rate per 10,000 houses</th>
                </tr>
-               <tr>
-                  <td>399</td>
-                  <td>38</td>
+               <tr><th>Southwark Company</th>
+                  <td>40046</td>
+                  <td>28107</td>
+                  <td>256423</td>
                </tr>
-                  <td>580</td>
+               <tr><th>Lambeth Company</th>
+                  <td>1263</td>
+                  <td>98</td>
+                  <td>1422</td>
+               <tr>
+                  <tr><th>Rest of london</th>
+                  <td>315</td>
+                  <td>37</td>
                   <td>59</td>
+               </tr>
          </table>
+           </div>
+           
+            <div>
+               <span></span>
+               <span></span>
+            </div>
    </body>
 </html>
